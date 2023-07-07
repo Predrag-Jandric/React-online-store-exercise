@@ -1,0 +1,10 @@
+@use '../modules/global&pages' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+.footer {
+    @include flex(center, center, row nowrap, 0);
+    background-color: $primary;
+    height: 5vh;
+    color: $white;
+}

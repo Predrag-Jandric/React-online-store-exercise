@@ -1,0 +1,58 @@
+// GLOBAL MODULE, things like styling properties
+// for multiple things, like a SET OF: buttons, icons,
+// titles, and hover effects are stored here
+
+@use 'variables' as *;
+@use './mixins' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+    text-decoration: none;
+}
+
+// ====================================================
+// AS THIS PROJECT IS SMALL, STYLING FOR PAGES WILL BE
+// STORED HERE, UNLIKE PARTIALS WHICH ARE SEPARATED IN 
+// THEIR OWN FOLDER AND PROPERLY STORED 
+
+.idle-text {
+    text-align: center;
+    padding: 5vh 10vw;
+    font-size: 1.8rem;
+    background-color: $bg;
+    color: $gray-1;
+    font-weight: 600;
+}
+
+.products{
+    @include grid(center, 2rem, 5);
+    overflow-x: hidden;
+    padding: 3rem;
+    background-color: #deecdd;
+
+    @media(max-width:1410px) {
+    grid-template-columns: repeat(4, 1fr); 
+    }
+
+    @media(max-width:1140px) {
+    grid-template-columns: repeat(3, 1fr); 
+    }
+
+    @media(max-width:870px) {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    @media(max-width:600px) {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+.all__our__products{
+    background-image: linear-gradient(to bottom, #c1dfc4 10%, #deecdd 100%);
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 2.2rem;
+}

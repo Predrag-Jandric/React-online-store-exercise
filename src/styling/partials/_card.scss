@@ -1,0 +1,30 @@
+@use '../modules/global&pages' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+.card {
+    @include flex(flex-start, flex-start, column nowrap, 0.5rem);
+    @include width-height(15rem, 18rem);
+    @include margin-padding(0rem, 0.8rem);
+    color: $gray-1;
+    background-color: $white;
+    border: 2px solid $gray-4;
+    box-shadow: 3px 3px 5px $gray-3;
+    border-radius: 10px;
+
+    // &__title {
+
+    // }
+
+    // &__rating {
+
+    // }
+
+    // &__description {
+
+    // }
+
+    // &__price {
+
+    // }
+}

@@ -1,0 +1,21 @@
+@use '../modules/global&pages' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *;
+
+.navbar{
+    @include flex(center, center, row nowrap, 2rem);
+    background-color: $primary;
+    height: 9vh;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    &__a {
+        color: $white;
+    }
+
+    .active{
+        color: $black;
+      }
+}
+
+

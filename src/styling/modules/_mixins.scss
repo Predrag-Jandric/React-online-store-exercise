@@ -1,0 +1,32 @@
+// MIXINS MODULE
+
+@mixin flex($justify: flex-start, $align: center, $flow: row nowrap, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+    gap: $gap;
+}
+
+@mixin grid($place-items, $gap, $cols) {
+    display: grid;
+    place-items: $place-items;
+    gap: $gap;
+    grid-template-columns: repeat($cols, 1fr);
+}
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin margin-padding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+
+
+
+
+
