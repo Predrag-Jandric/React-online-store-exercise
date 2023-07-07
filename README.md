@@ -1,7 +1,7 @@
 
 # React routing and map practice
 
-## 🔗 [Live Preview]()
+## 🔗 [Live Preview](https://main--velvety-longma-b78567.netlify.app/)
 ![Design preview](./preview.gif)
 
 This is a practice project for learning and practicing various concepts and features of React but mainly routing and mapping data received from backend (Dummy JSON API in this case). 
