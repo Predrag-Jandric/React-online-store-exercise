@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Card({item}) {
+function Card({ item }) {
 
 	return (
 		<div >
@@ -10,6 +11,7 @@ function Card({item}) {
 				<small className='card__rating'>rating: {item.rating}</small>
 				<p className='card__description'>{item.description}</p>
 				<p className='card__price'>Price: ${item.price}</p>
+				<Link className='card__btn' to={`/SingleProduct/${item.id}`}>View details</Link>
 			</article>
 		</div>
 	);

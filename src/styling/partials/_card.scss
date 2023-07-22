@@ -27,4 +27,22 @@
     // &__price {
 
     // }
+
+    &__btn {
+        padding: 0.5rem 1rem;
+        border-radius: 20rem;
+        border: 1px solid transparent;
+        background-color: $primary;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $white;
+        transition: 200ms ease-in-out;
+        
+        &:hover {
+            cursor: pointer;
+            color:  $black;
+            transform: scale(1.08);
+            border: 1px solid $black;
+        }
+    }
 }
