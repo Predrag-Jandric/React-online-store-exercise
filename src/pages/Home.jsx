@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Home() {
-	return <div className='idle-text'>This is Home page, it is empty because this exercise is meant for practicing: 1. React routing 2. mapping through data received from backend. Click "Products" to see this part of the exercise.</div>;
+	return <div className='idle-text'>Click "Products" then the individual product to see information about it. On the individual product page there are lot of funtionalities. This project includes react routing and advanced state management with redux toolkit</div>;
 }
 
 export default Home;
