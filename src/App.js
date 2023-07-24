@@ -16,7 +16,7 @@ function App() {
 		ProductService.getAllProducts()
 			.then((res) => dispatch(getAllProducts(res.data.products)))
 			.catch((err) => console.log(err));
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<div className='body'>

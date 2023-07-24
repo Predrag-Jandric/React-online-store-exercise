@@ -19,7 +19,7 @@ function SingleProduct() {
         setSingleProduct(res.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   const { images, title, price, rating, stock } = singleProduct;
 

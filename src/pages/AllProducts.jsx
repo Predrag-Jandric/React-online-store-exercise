@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import ProductService from '../services/ProductService';
 import Card from '../components/Card';
 import { useSelector } from 'react-redux';
 
