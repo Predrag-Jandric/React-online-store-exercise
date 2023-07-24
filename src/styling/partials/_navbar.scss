@@ -6,19 +6,22 @@
     @include flex(center, center, row nowrap, 2rem);
     background-color: $primary;
     height: 9vh;
-    font-size: 1.8rem;
-    font-weight: 600;
 
     &__a {
-        color: $white;
+        @include font($white, 1.8rem, 500);
+        transition: 150ms ease-in-out;
+
+        &:hover {
+          color: $gray-3;
+        }
     }
 
     @keyframes oscillate {
         0%, 100% {
-          transform: rotate(-1deg);
+          transform: rotate(-2deg);
         }
         50% {
-          transform: rotate(1deg);
+          transform: rotate(2deg);
         }
       }
 

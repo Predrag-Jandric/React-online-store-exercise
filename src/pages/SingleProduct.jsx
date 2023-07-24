@@ -23,13 +23,13 @@ function SingleProduct() {
 
   const { images, title, price, rating, stock } = singleProduct;
 
-  const handleDecreaseQuantity = () => {
+  const decreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity((prevQuantity) => prevQuantity - 1);
     }
   };
 
-  const handleIncreaseQuantity = () => {
+  const increaseQuantity = () => {
     if (quantity < stock) {
       setQuantity((prevQuantity) => prevQuantity + 1);
     }
@@ -101,7 +101,7 @@ function SingleProduct() {
               <>
                 <p className='RS_2of3_container_p'>Quantity:</p>
                 <button
-                  onClick={handleDecreaseQuantity}
+                  onClick={decreaseQuantity}
                   disabled={quantity === 1}
                   className="RS_2of3_container_btn"
                 >
@@ -109,7 +109,7 @@ function SingleProduct() {
                 </button>
                 <p className='RS_2of3_container_quantity'>{quantity}</p>
                 <button
-                  onClick={handleIncreaseQuantity}
+                  onClick={increaseQuantity}
                   disabled={quantity >= stock}
                   className="RS_2of3_container_btn"
                 >
@@ -124,19 +124,19 @@ function SingleProduct() {
 
         <article className='RS_3of3'>
           <button
-            onClick={() => alert("This part doesn't have functionality")}
+            onClick={() => alert("This button functionality is out of this project's scope")}
             className='RS_3of3_btn'
           >
             Add to cart
           </button>
           <button
-            onClick={() => alert("This part doesn't have functionality")}
+            onClick={() => alert("This button functionality is out of this project's scope")}
             className='RS_3of3_btn'
           >
             Buy it now
           </button>
           <VscHeart
-            onClick={() => alert("This part doesn't have functionality")}
+            onClick={() => alert("This button functionality is out of this project's scope")}
             className='RS_3of3_icon'
           />
         </article>

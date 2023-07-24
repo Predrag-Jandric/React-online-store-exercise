@@ -5,14 +5,18 @@ function Card({ item }) {
 
 	return (
 		<div >
-			<article className='card'>
+			<section className='card'>
+				<img className='card__image' src={item.images[0]} alt="image missing" />
 
-				<h1 className='card__title'>{item.title}</h1>
-				<small className='card__rating'>rating: {item.rating}</small>
-				<p className='card__description'>{item.description}</p>
-				<p className='card__price'>Price: ${item.price}</p>
+				<article className='card__content'>
+					<h1 className='card__content__title'>{item.title}</h1>
+					<small className='card__content__rating'>rating: {item.rating}</small>
+					<p className='card__content__description'>{item.description}</p>
+					<p className='card__content__price'>Price: <b>{item.price} $</b></p>
+				</article>
+
 				<Link className='card__btn' to={`/SingleProduct/${item.id}`}>View details</Link>
-			</article>
+			</section>
 		</div>
 	);
 }

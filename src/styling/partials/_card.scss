@@ -3,29 +3,43 @@
 @use '../modules/variables' as *; 
 
 .card {
-    @include flex(flex-start, flex-start, column nowrap, 0.5rem);
-    @include width-height(15rem, 18rem);
-    @include margin-padding(0rem, 0.8rem);
+    @include flex(space-between, flex-start, column nowrap, 0.8rem);
+    @include width-height(20rem, 34rem);
+    @include margin-padding(0rem, 1rem);
     @include border-radius(2px solid $gray-4, 1rem);
     color: $gray-1;
     background-color: $white;
     box-shadow: 3px 3px 5px $gray-3;
 
-    // &__title {
 
-    // }
+    &__image {
+        @include width-height(17.8rem, 10rem);
+        object-fit: contain;
+        padding: 0.3rem;
+    }
 
-    // &__rating {
+    &__content {
+        @include flex-dir-gap(column, 0.8rem);
+        flex: 1;
+        color: $gray-1;
 
-    // }
+        &__title {
+            font-size: 1.3rem;
 
-    // &__description {
-
-    // }
-
-    // &__price {
-
-    // }
+        }
+    
+        // &__rating {
+    
+        // }
+    
+        // &__description {
+    
+        // }
+    
+        // &__price {
+    
+        // }
+    }
 
     &__btn {
         @include border-radius(none, 999rem);
