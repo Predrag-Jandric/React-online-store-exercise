@@ -6,8 +6,7 @@
 @use './mixins' as *;
 
 *{
-    margin: 0;
-    padding: 0;
+    @include margin-padding(0, 0);
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -19,12 +18,10 @@
 // THEIR OWN FOLDER AND PROPERLY STORED 
 
 .idle-text {
+    @include font($gray-1, 1.5rem, 500);
     text-align: center;
     padding: 5vh 10vw;
-    font-size: 1.8rem;
     background-color: $bg;
-    color: $gray-1;
-    font-weight: 600;
 }
 
 .products{

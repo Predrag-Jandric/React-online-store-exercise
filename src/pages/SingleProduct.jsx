@@ -15,7 +15,7 @@ function SingleProduct() {
       .then((res) => {
         const firstImage = res.data.images[0];
         setMainImage(firstImage);
-        
+
         setSingleProduct(res.data);
       })
       .catch((err) => console.log(err));
@@ -38,12 +38,13 @@ function SingleProduct() {
   return (
     <div className='main'>
 
+      {/* left section = LS */}
       {images && (
         <section className='LS'>
           <img src={mainImage} alt="img missing" className="LS_main_image" />
 
           <article className="LS_secondary_images_container">
-            {images.map((image, index) => (
+            {images.slice(0, 4).map((image, index) => (
               <img
                 src={image}
                 key={index}
@@ -80,7 +81,7 @@ function SingleProduct() {
             <p className='RS_1of3_hurry_up'>
               {stock >= 1 ? (
                 <span>{' '}
-                  Hurry up, <strong>{stock}</strong> left!
+                  Hurry up! only <strong>{stock}</strong> products left in stock!
                 </span>
               ) : (
                 'Sorry, none left'
@@ -89,7 +90,7 @@ function SingleProduct() {
           </article>
         )}
 
-        <hr className="" />
+        <hr className="horizontal_line" />
 
         <article className="RS_2of3">
           <p className="RS_2of3_total_price">
@@ -140,7 +141,7 @@ function SingleProduct() {
           />
         </article>
 
-        <hr className="" />
+        <hr className="horizontal_line" />
       </section>
     </div>
   );

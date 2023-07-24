@@ -25,6 +25,24 @@
     padding: $padding;
 }
 
+@mixin flex-dir-gap($direction, $gap: 1rem) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+
+@mixin border-radius($border, $radius){
+    border: $border;
+    border-radius: $radius;
+}
+
+@mixin font($color, $size, $weight){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+  
 
 
 
