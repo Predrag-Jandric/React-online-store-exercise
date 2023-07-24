@@ -15,7 +15,7 @@ function SingleProduct() {
       .then((res) => {
         const firstImage = res.data.images[0];
         setMainImage(firstImage);
-
+        // empty space for testing purpose, look in "testing" folder 
         setSingleProduct(res.data);
       })
       .catch((err) => console.log(err));

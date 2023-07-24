@@ -1,5 +1,5 @@
 
-// in singleProduct.jsx replace useEffect with this one to 
+// in SingleProduct.jsx replace useEffect with this one to 
 // test whether singleProduct.stock conditional works or not.
 // test by changing the {number} in res.data.stock = {number}
 

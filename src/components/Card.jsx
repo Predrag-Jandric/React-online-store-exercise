@@ -6,7 +6,7 @@ function Card({ item }) {
 	return (
 		<div >
 			<section className='card'>
-				<img className='card__image' src={item.images[0]} alt="image missing" />
+				<img className='card__image' src={item.images[0]} alt="card representation" />
 
 				<article className='card__content'>
 					<h1 className='card__content__title'>{item.title}</h1>

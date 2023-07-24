@@ -1,0 +1,24 @@
+// GLOBAL MODULE, things like styling properties
+// for multiple things, like a SET OF: buttons, icons,
+// titles, and hover effects are stored here
+
+@use 'variables' as *;
+@use './mixins' as *;
+
+*{
+    @include margin-padding(0, 0);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+// ============================================
+// styling for HOME PAGE is here since there is
+//  only one line of code
+
+.idle-text {
+    @include font($gray-1, 1.4rem, 400);
+    text-align: center;
+    padding: 5vh 20vw;
+    background-color: $bg;
+}

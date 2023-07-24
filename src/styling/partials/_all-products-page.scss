@@ -1,28 +1,7 @@
-// GLOBAL MODULE, things like styling properties
-// for multiple things, like a SET OF: buttons, icons,
-// titles, and hover effects are stored here
+@use '../modules/global' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
 
-@use 'variables' as *;
-@use './mixins' as *;
-
-*{
-    @include margin-padding(0, 0);
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-}
-
-// ====================================================
-// AS THIS PROJECT IS SMALL, STYLING FOR PAGES WILL BE
-// STORED HERE, UNLIKE PARTIALS WHICH ARE SEPARATED IN 
-// THEIR OWN FOLDER AND PROPERLY STORED 
-
-.idle-text {
-    @include font($gray-1, 1.4rem, 400);
-    text-align: center;
-    padding: 5vh 20vw;
-    background-color: $bg;
-}
 
 .products{
     @include grid(center, 2rem, 5);
