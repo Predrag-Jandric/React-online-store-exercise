@@ -11,7 +11,7 @@
     margin: 3rem 0; 
 
     @media (max-width: 62.5rem){
-      @include flex(start, center, column nowrap, 2rem);
+      @include flex(center, center, column nowrap, 2rem);
     }
 
     .LS {
