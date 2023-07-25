@@ -11,7 +11,7 @@
     margin: 3rem 0; 
 
     @media (max-width: 62.5rem){
-      @include flex(center, center, column nowrap, 2rem);
+      @include flex(start, center, column nowrap, 2rem);
     }
 
     .LS {
@@ -170,3 +170,6 @@
 
 
 
+.LS_secondary_images.active{
+  border: 1px solid $gray-1;
+}

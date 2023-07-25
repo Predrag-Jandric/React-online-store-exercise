@@ -35,6 +35,12 @@ function SingleProduct() {
     }
   };
 
+  const [activeCard, setActiveCard] = useState(0);
+
+  const handleCardClick = (index) => {
+    setActiveCard(index);
+  };
+
   return (
     <div className='main'>
 
@@ -49,8 +55,12 @@ function SingleProduct() {
                 src={image}
                 key={index}
                 alt="img missing"
-                className="LS_secondary_images"
-                onClick={() => setMainImage(image)}
+                // className="LS_secondary_images"
+                className={`LS_secondary_images ${index === activeCard ? 'active' : ''}`}
+                onClick={() => {
+                  handleCardClick(index)
+                  setMainImage(image)
+                }}
               />
             ))}
           </article>
