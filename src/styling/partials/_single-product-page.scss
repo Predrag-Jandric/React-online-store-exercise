@@ -2,13 +2,9 @@
 @use '../modules/mixins' as *;
 @use '../modules/variables' as *; 
 
-.LS_secondary_images_container{
-  justify-content: center;
-}
-
 .main {
   @include flex(center, flex-start, row nowrap, 2rem);
-    margin: 3rem 0; 
+    padding: 3rem 0; 
 
     @media (max-width: 62.5rem){
       @include flex(center, center, column nowrap, 2rem);
@@ -18,25 +14,28 @@
       width: 30rem;
     
         &_main_image {
-          @include border-radius(1px solid $gray-4, 1rem);
+          @include border-radius(1px solid $gray-3, 1rem);
           @include width-height(100%, 26.875rem);
           display: block;
           padding: 0.5rem;
           object-fit: contain;
+          background-color: $white;
         }
       
         &_secondary_images_container {
           @include flex-dir-gap(row, 1rem);
           align-items: center;
           height: 6.25rem;
+          justify-content: center;
         }
       
         &_secondary_images {
-          @include border-radius(1px solid $gray-4, 1rem);
+          @include border-radius(1px solid $gray-3, 1rem);
           @include width-height(6.7rem, 4.063rem);
           cursor: pointer;
           padding: 0.3rem;
           object-fit: contain;
+          background-color: $white;
         }
       }
       

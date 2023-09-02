@@ -7,7 +7,6 @@
     @include grid(center, 2rem, 5);
     overflow-x: hidden;
     padding: 2.5rem;
-    background-color: #deecdd;
 
     @media (max-width: 114.375rem) {
         grid-template-columns: repeat(4, 1fr);
@@ -29,7 +28,7 @@
 
 
 .all__our__products{
-    background-image: linear-gradient(to bottom, #c1dfc4 0%, #deecdd 100%);
+    background-color: $bg;
     text-align: center;
     padding-top: 1.5rem;
     font-size: 2.2rem;

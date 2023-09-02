@@ -16,9 +16,13 @@
 // styling for HOME PAGE is here since there is
 //  only one line of code
 
-.idle-text {
-    @include font($gray-1, 1.4rem, 400);
+body {
+    background-color: $bg;
+}
+
+.home {
+    @include font($gray-1, 1.3rem, 400);
+    @include flex(normal, normal, column nowrap, 2rem);
     text-align: center;
     padding: 5vh 20vw;
-    background-color: $bg;
 }

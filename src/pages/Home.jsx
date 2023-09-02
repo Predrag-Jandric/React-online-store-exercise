@@ -1,15 +1,38 @@
 import React from 'react';
 
 function Home() {
-	return <div className='idle-text'>
-		Welcome, This React practice project includes react routing and advanced state management with redux toolkit.
-		<br />
-		<br />
-		Begin by clicking "Products" then "View Details" of a product you like. This will lead to a new page with functionalities:
-		<br /> 1. Changing thumbnail
-		<br /> 2. Calculating a total price depending of the product price
-		<br /> 3. Product availability logic
-	</div>;
+	return (
+		<main className='home'>
+			<h2>Project Documentation</h2>
+
+			<hr />
+
+			<article>
+				<h4>What is this?</h4>
+				<p>React practice project that simulates store page where user can select and buy products.</p>
+			</article>
+
+			<hr />
+			
+			<article>
+				<h4>How to use?</h4>
+				<p>Click "Products" then "View Details" of a product you like.</p>
+			</article>
+
+			<hr />
+
+			<article>
+				<h4>Tools/Features used:</h4>
+				<p>1. React routing with react-router-dom</p>
+				<p>2. Advanced state management with redux-toolkit.</p>
+				<p>3. Maps, conditional rendering etc...</p>
+				<p>4. Sass for styling</p>
+			</article>
+
+			<hr />
+
+		</main>
+	)
 }
 
 export default Home;

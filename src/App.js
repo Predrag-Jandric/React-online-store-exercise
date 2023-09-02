@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import { useDispatch } from 'react-redux';
 import ProductService from './services/ProductService';
 import { getAllProducts } from './store/productsSlice';
@@ -19,11 +18,10 @@ function App() {
 	}, [dispatch]);
 
 	return (
-		<div className='body'>
+		<main>
 			<Navbar />
 			<Outlet />
-			<Footer />
-		</div>
+		</main>
 	);
 }
 

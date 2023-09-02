@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Card({ item }) {
 
 	return (
-		<div >
+		<main >
 			<section className='card'>
 				<img className='card__image' src={item.images[0]} alt="card representation" />
 
@@ -17,7 +17,7 @@ function Card({ item }) {
 
 				<Link className='card__btn' to={`/SingleProduct/${item.id}`}>View details</Link>
 			</section>
-		</div>
+		</main>
 	);
 }
 

@@ -43,7 +43,7 @@
 
     &__btn {
         @include border-radius(none, 999rem);
-        @include font($white, 1rem, 600);
+        @include font($white, 1rem, 500);
         padding: 0.7rem 2rem;
         background-color: $btn-yellow;
         transition: 200ms ease-in-out;

@@ -8,6 +8,7 @@ useEffect(() => {
         .then((res) => {
             const firstImage = res.data.images[0];
             setMainImage(firstImage);
+            // this number here, after =
             res.data.stock = 0;
             setSingleProduct(res.data);
         })

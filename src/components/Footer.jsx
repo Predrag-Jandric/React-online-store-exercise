@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <small className='footer'>End of the page</small>
+    <small className='footer'>Footer</small>
   )
 }
 

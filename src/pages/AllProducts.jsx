@@ -8,14 +8,14 @@ function AllProducts() {
 console.log(allProducts);
 
   return (
-    <div>
+    <main>
       <h1 className='all__our__products'>All our products</h1>
       <section className='products'>
         {allProducts.map((product, i) => (
           <Card key={i} item={product} />
         ))}
       </section>
-    </div>
+    </main>
   );
 }
 
