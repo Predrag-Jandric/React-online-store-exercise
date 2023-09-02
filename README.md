@@ -1,12 +1,15 @@
 
 # React - online store exercise
 
-# 🔗 [Live Preview]()
-<!-- ![Design preview]() -->
+# 🔗 [Live Preview](https://peppy-khapse-f13bb3.netlify.app)
+![Design preview](./preview.png)
+![Design preview](./preview2.gif)
+
+---
 
 This is a practice project for learning and practicing various concepts and features of React but mainly API calls, routing, and mapping data received from backend (Dummy JSON API in this case). 
 
-This "online store" website allows the user to use multiple pages and select any product, upon which the information about that specific product only will be displayed to the user.
+This "online store" website allows the user to use multiple pages and select any product, upon which the information about that specific product will be displayed to the user.
 
 The user can then change the product thumbnail and manipulate product quantity. There is also logic for product availability (see src/testing/testing.jsx)
 
