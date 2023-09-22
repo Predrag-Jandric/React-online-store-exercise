@@ -6,7 +6,7 @@
 ![Design preview](./preview2.gif)
 
 ---
-## About this project:
+## About 👋
 
 This is a practice project for learning and practicing various concepts and features of React but mainly API calls, routing, and mapping data received from backend (Dummy JSON API in this case). 
 
@@ -15,7 +15,8 @@ This "online store" website allows the user to use multiple pages and select any
 The user can then change the product thumbnail and manipulate product quantity. There is also logic for product availability (see src/testing/testing.jsx)
 
 ---
-### Project includes the following pages:
+
+## Pages 📙
 
 * Home page: Project documentantion.
 
@@ -23,7 +24,7 @@ The user can then change the product thumbnail and manipulate product quantity. 
 
 ---
 
-### Features and Concepts Practiced
+## Features and Concepts Practiced 👨‍💻 
 
 * React component-based architecture
 * React Global and Local state management with useState and Redux toolkit
