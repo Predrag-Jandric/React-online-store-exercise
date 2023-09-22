@@ -9,7 +9,7 @@ function Home() {
 
 			<article>
 				<h4>What is this?</h4>
-				<p>React practice project that simulates store page where user can select and buy products.</p>
+				<p>React practice project that simulates store page logic where user can view the selected item.</p>
 			</article>
 
 			<hr />
